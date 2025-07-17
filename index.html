@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SayRIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+        #touchControls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        #touchControls button {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            border-radius: 50%;
+            border: none;
+        }
+        #inputName {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputName" placeholder="名前を入力してね！">
+    <div id="touchControls">
+        <button id="left">←</button>
+        <button id="right">→</button>
+        <button id="rotate">⟳</button>
+        <button id="down">↓</button>
+    </div>
+</body>
+</html>
